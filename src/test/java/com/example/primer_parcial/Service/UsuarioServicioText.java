@@ -36,13 +36,13 @@ public class UsuarioServicioText {
         // given
         Usuario usuario = new Usuario();
         usuario.setId(1l);
-        usuario.setNombre("kevin");
-        usuario.setApellidos("rivera");
-        usuario.setDocumento("1003259419");
-        usuario.setDireccion("calle 2");
-        usuario.setFechaNacimiento(new Date(2000-02-10));
-        usuario.setCorreo("kevin@gmail");
-        usuario.setPassword("kevin123");
+        usuario.setNombre("brainer");
+        usuario.setApellidos("gerena");
+        usuario.setDocumento("102222");
+        usuario.setDireccion("Juan 23");
+        usuario.setFechaNacimiento(new Date(1998-02-11));
+        usuario.setCorreo("brainer@gmail");
+        usuario.setPassword("Brainer0717");
 
 
 
@@ -83,13 +83,13 @@ public class UsuarioServicioText {
         // given
         Usuario usuario = new Usuario();
         usuario.setId(1l);
-        usuario.setNombre("kevin");
-        usuario.setApellidos("rivera");
-        usuario.setDocumento("1003259419");
-        usuario.setDireccion("calle 2");
-        usuario.setFechaNacimiento(new Date(2000-02-10));
-        usuario.setCorreo("kevin@gmail");
-        usuario.setPassword("kevin123");
+        usuario.setNombre("brainer");
+        usuario.setApellidos("gerena");
+        usuario.setDocumento("102222");
+        usuario.setDireccion("Juan 23");
+        usuario.setFechaNacimiento(new Date(1998-02-11));
+        usuario.setCorreo("brainer@gmail");
+        usuario.setPassword("Brainer0717");
 
 
 
@@ -134,13 +134,13 @@ public class UsuarioServicioText {
         // given
         Usuario usuario = new Usuario();
         usuario.setId(1l);
-        usuario.setNombre("kevin");
-        usuario.setApellidos("rivera");
-        usuario.setDocumento("1003259419");
-        usuario.setDireccion("calle 2");
-        usuario.setFechaNacimiento(new Date(2000-02-10));
-        usuario.setCorreo("kevin@gmail");
-        usuario.setPassword("kevin123");
+        usuario.setNombre("brainer");
+        usuario.setApellidos("gerena");
+        usuario.setDocumento("102222");
+        usuario.setDireccion("Juan 23");
+        usuario.setFechaNacimiento(new Date(1998-02-11));
+        usuario.setCorreo("brainer@gmail");
+        usuario.setPassword("Brainer0717");
 
 
 
@@ -187,13 +187,13 @@ public class UsuarioServicioText {
         // given
         Usuario usuario = new Usuario();
         usuario.setId(1l);
-        usuario.setNombre("kevin");
-        usuario.setApellidos("rivera");
-        usuario.setDocumento("1003259419");
-        usuario.setDireccion("calle 2");
-        usuario.setFechaNacimiento(new Date(2000-02-10));
-        usuario.setCorreo("kevin@gmail");
-        usuario.setPassword("kevin123");
+        usuario.setNombre("brainer");
+        usuario.setApellidos("gerena");
+        usuario.setDocumento("102222");
+        usuario.setDireccion("Juan 23");
+        usuario.setFechaNacimiento(new Date(1998-02-11));
+        usuario.setCorreo("brainer@gmail");
+        usuario.setPassword("Brainer0717");
 
 
 
@@ -238,13 +238,13 @@ public class UsuarioServicioText {
         //Given
         Usuario usuario = new Usuario();
         usuario.setId(1l);
-        usuario.setNombre("kevin");
-        usuario.setApellidos("rivera");
-        usuario.setDocumento("1003259419");
-        usuario.setDireccion("calle 2");
-        usuario.setFechaNacimiento(new Date(2000-02-10));
-        usuario.setCorreo("kevin@gmail");
-        usuario.setPassword("kevin123");
+        usuario.setNombre("brainer");
+        usuario.setApellidos("gerena");
+        usuario.setDocumento("102222");
+        usuario.setDireccion("Juan 23");
+        usuario.setFechaNacimiento(new Date(1998-02-11));
+        usuario.setCorreo("brainer@gmail");
+        usuario.setPassword("Brainer0717");
 
         //when
 
@@ -279,24 +279,24 @@ public class UsuarioServicioText {
         // Given
         Usuario usuario = new Usuario();
         usuario.setId(1l);
-        usuario.setNombre("kevin");
-        usuario.setApellidos("rivera");
-        usuario.setDocumento("1003259419");
-        usuario.setDireccion("calle 2");
-        usuario.setFechaNacimiento(new Date(2000-02-10));
-        usuario.setCorreo("kevin@gmail");
-        usuario.setPassword("kevin123");
+        usuario.setNombre("brainer");
+        usuario.setApellidos("gerena");
+        usuario.setDocumento("102222");
+        usuario.setDireccion("Juan 23");
+        usuario.setFechaNacimiento(new Date(1998-02-11));
+        usuario.setCorreo("brainer@gmail");
+        usuario.setPassword("Brainer0717");
 
         Usuario usuarioActualizado = new Usuario();
 
         usuarioActualizado.setId(1l);
-        usuarioActualizado.setNombre("julian");
-        usuarioActualizado.setApellidos("contreras");
-        usuarioActualizado.setDocumento("1003259419");
-        usuarioActualizado.setDireccion("calle 3");
-        usuarioActualizado.setFechaNacimiento(new Date(2001-02-10));
-        usuarioActualizado.setCorreo("kevin2@gmail");
-        usuarioActualizado.setPassword("kevin1234");
+        usuarioActualizado.setNombre("Juan");
+        usuarioActualizado.setApellidos("Areas");
+        usuarioActualizado.setDocumento("10055588");
+        usuarioActualizado.setDireccion("Buenos Aires");
+        usuarioActualizado.setFechaNacimiento(new Date(1999-02-15));
+        usuarioActualizado.setCorreo("juan@gmail");
+        usuarioActualizado.setPassword("Juan0717");
 
         given(usuarioRepository.findById(usuario.getId())).willReturn(Optional.of(usuario));
 

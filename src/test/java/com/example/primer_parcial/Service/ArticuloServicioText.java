@@ -42,17 +42,17 @@ public class ArticuloServicioText {
         Articulo articulo= new Articulo();
         Categoria categoria= new Categoria();
         categoria.setId(2l);
-        categoria.setNombre("peppe");
-        categoria.setDescripcion("jjj");
+        categoria.setNombre("Bebidas");
+        categoria.setDescripcion("Azucaradas");
         articulo.setId(1l);
-        articulo.setCodigo("100");
-        articulo.setNombre("kevin");
-        articulo.setDescripcion("prubea");
-        articulo.setFecha_registro(new Date(2000-02-10));
+        articulo.setCodigo("001");
+        articulo.setNombre("Coca-cola");
+        articulo.setDescripcion("Prueba");
+        articulo.setFecha_registro(new Date(2002-06-15));
         articulo.setStock(10);
         articulo.setCategoria(categoria);
-        articulo.setPrecio_compra(new Float(20.000));
-        articulo.setPrecio_venta(new Float(20.000));
+        articulo.setPrecio_compra(new Float(4.000));
+        articulo.setPrecio_venta(new Float(5.000));
 
 
 
@@ -97,17 +97,17 @@ public class ArticuloServicioText {
         Articulo articulo= new Articulo();
         Categoria categoria= new Categoria();
         categoria.setId(2l);
-        categoria.setNombre("peppe");
-        categoria.setDescripcion("jjj");
-        articulo.setId(1l);
-        articulo.setCodigo("100");
-        articulo.setNombre("kevin");
-        articulo.setDescripcion("prubea");
-        articulo.setFecha_registro(new Date(2000-02-10));
-        articulo.setStock(10);
-        articulo.setCategoria(categoria);
-        articulo.setPrecio_compra(new Float(20.000));
-        articulo.setPrecio_venta(new Float(20.000));
+         categoria.setNombre("Bebidas");
+         categoria.setDescripcion("Azucaradas");
+         articulo.setId(1l);
+         articulo.setCodigo("001");
+         articulo.setNombre("Coca-cola");
+         articulo.setDescripcion("Prueba");
+         articulo.setFecha_registro(new Date(2002-06-15));
+         articulo.setStock(10);
+         articulo.setCategoria(categoria);
+         articulo.setPrecio_compra(new Float(4.000));
+         articulo.setPrecio_venta(new Float(5.000));
 
 
 
@@ -152,17 +152,17 @@ public class ArticuloServicioText {
         Articulo articulo= new Articulo();
         Categoria categoria= new Categoria();
         categoria.setId(2l);
-        categoria.setNombre("peppe");
-        categoria.setDescripcion("jjj");
+        categoria.setNombre("Bebidas");
+        categoria.setDescripcion("Azucaradas");
         articulo.setId(1l);
-        articulo.setCodigo("100");
-        articulo.setNombre("kevin");
-        articulo.setDescripcion("prubea");
-        articulo.setFecha_registro(new Date(2000-02-10));
+        articulo.setCodigo("001");
+        articulo.setNombre("Coca-cola");
+        articulo.setDescripcion("Prueba");
+        articulo.setFecha_registro(new Date(2002-06-15));
         articulo.setStock(10);
         articulo.setCategoria(categoria);
-        articulo.setPrecio_compra(new Float(20.000));
-        articulo.setPrecio_venta(new Float(20.000));
+        articulo.setPrecio_compra(new Float(4.000));
+        articulo.setPrecio_venta(new Float(5.000));
 
 
 
@@ -212,17 +212,17 @@ public class ArticuloServicioText {
         Articulo articulo= new Articulo();
         Categoria categoria= new Categoria();
         categoria.setId(2l);
-        categoria.setNombre("peppe");
-        categoria.setDescripcion("jjj");
+        categoria.setNombre("Bebidas");
+        categoria.setDescripcion("Azucaradas");
         articulo.setId(1l);
-        articulo.setCodigo("100");
-        articulo.setNombre("kevin");
-        articulo.setDescripcion("prubea");
-        articulo.setFecha_registro(new Date(2000-02-10));
+        articulo.setCodigo("001");
+        articulo.setNombre("Coca-cola");
+        articulo.setDescripcion("Prueba");
+        articulo.setFecha_registro(new Date(2002-06-15));
         articulo.setStock(10);
         articulo.setCategoria(categoria);
-        articulo.setPrecio_compra(new Float(20.000));
-        articulo.setPrecio_venta(new Float(20.000));
+        articulo.setPrecio_compra(new Float(4.000));
+        articulo.setPrecio_venta(new Float(5.000));
 
         //when
         when(articuloRepository.findAll()).thenReturn(List.of(articulo));

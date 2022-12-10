@@ -36,8 +36,8 @@ public class CategoriaServicioText {
         // given
         Categoria categoria= new Categoria();
         categoria.setId(2l);
-        categoria.setNombre("peppe");
-        categoria.setDescripcion("jjj");
+        categoria.setNombre("Bebidas");
+        categoria.setDescripcion("Azucaradas");
 
 
 
@@ -87,8 +87,8 @@ public class CategoriaServicioText {
 
         Categoria categoria= new Categoria();
         categoria.setId(2l);
-        categoria.setNombre("peppe");
-        categoria.setDescripcion("jjj");
+        categoria.setNombre("Bebidas");
+        categoria.setDescripcion("Azucaradas");
 
 
 
@@ -144,8 +144,8 @@ public class CategoriaServicioText {
 
         Categoria categoria= new Categoria();
         categoria.setId(2l);
-        categoria.setNombre("peppe");
-        categoria.setDescripcion("jjj");
+        categoria.setNombre("Bebidas");
+        categoria.setDescripcion("Azucaradas");
 
 
         //when
