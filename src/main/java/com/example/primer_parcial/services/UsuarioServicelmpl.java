@@ -87,9 +87,6 @@ public class UsuarioServicelmpl implements UsuarioService{
                 usuarioBD.get().setNombre(usuario.getNombre());
                 usuarioBD.get().setApellidos(usuario.getApellidos());
                 usuarioBD.get().setDocumento(usuario.getDocumento());
-                usuarioBD.get().setDireccion(usuario.getDireccion());
-                usuarioBD.get().setFechaNacimiento(usuario.getFechaNacimiento());
-                usuarioBD.get().setTelefono(usuario.getTelefono());
                 usuarioBD.get().setCorreo(usuario.getCorreo());
                 usuarioBD.get().setPassword(passwordEncoder.encode(usuario.getPassword()));
 

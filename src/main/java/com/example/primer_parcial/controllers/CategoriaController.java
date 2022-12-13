@@ -68,6 +68,19 @@ public class CategoriaController {
 
     }
 
+    @PutMapping("/categoria/{id}")
+    public ResponseEntity editarCategoria(@PathVariable Long id ,@RequestBody Categoria categoria, @RequestHeader(value = "Authorization") String token){
+        try {
+            if (jwtUtil.getKey(token) == null) {
+                return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Token no valido");
+            }
+            return categoriaService.editCategoria(id, categoria);
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Token no valido"+e.getMessage());
+        }
+
+    }
+
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public Map<String, String> handleValidationExceptions(

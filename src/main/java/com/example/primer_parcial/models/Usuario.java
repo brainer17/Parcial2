@@ -25,11 +25,6 @@ public class Usuario {
     @NotBlank(message = "el documento no puede estar en blanco")
     @Column (length = 20,nullable = false)
     private String documento;
-    @Column (length = 100)
-    private String direccion;
-    private Date fechaNacimiento;
-    @Column(length = 15)
-    private String telefono;
     @Column(unique = true,length = 100,nullable = false)
     @NotBlank(message = "el correo no puede estar en blanco")
     private String correo;

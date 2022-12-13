@@ -39,8 +39,6 @@ public class UsuarioServicioText {
         usuario.setNombre("brainer");
         usuario.setApellidos("gerena");
         usuario.setDocumento("102222");
-        usuario.setDireccion("Juan 23");
-        usuario.setFechaNacimiento(new Date(1998-02-11));
         usuario.setCorreo("brainer@gmail");
         usuario.setPassword("Brainer0717");
 
@@ -86,8 +84,6 @@ public class UsuarioServicioText {
         usuario.setNombre("brainer");
         usuario.setApellidos("gerena");
         usuario.setDocumento("102222");
-        usuario.setDireccion("Juan 23");
-        usuario.setFechaNacimiento(new Date(1998-02-11));
         usuario.setCorreo("brainer@gmail");
         usuario.setPassword("Brainer0717");
 
@@ -137,8 +133,6 @@ public class UsuarioServicioText {
         usuario.setNombre("brainer");
         usuario.setApellidos("gerena");
         usuario.setDocumento("102222");
-        usuario.setDireccion("Juan 23");
-        usuario.setFechaNacimiento(new Date(1998-02-11));
         usuario.setCorreo("brainer@gmail");
         usuario.setPassword("Brainer0717");
 
@@ -190,8 +184,6 @@ public class UsuarioServicioText {
         usuario.setNombre("brainer");
         usuario.setApellidos("gerena");
         usuario.setDocumento("102222");
-        usuario.setDireccion("Juan 23");
-        usuario.setFechaNacimiento(new Date(1998-02-11));
         usuario.setCorreo("brainer@gmail");
         usuario.setPassword("Brainer0717");
 
@@ -241,8 +233,6 @@ public class UsuarioServicioText {
         usuario.setNombre("brainer");
         usuario.setApellidos("gerena");
         usuario.setDocumento("102222");
-        usuario.setDireccion("Juan 23");
-        usuario.setFechaNacimiento(new Date(1998-02-11));
         usuario.setCorreo("brainer@gmail");
         usuario.setPassword("Brainer0717");
 
@@ -282,8 +272,6 @@ public class UsuarioServicioText {
         usuario.setNombre("brainer");
         usuario.setApellidos("gerena");
         usuario.setDocumento("102222");
-        usuario.setDireccion("Juan 23");
-        usuario.setFechaNacimiento(new Date(1998-02-11));
         usuario.setCorreo("brainer@gmail");
         usuario.setPassword("Brainer0717");
 
@@ -293,8 +281,6 @@ public class UsuarioServicioText {
         usuarioActualizado.setNombre("Juan");
         usuarioActualizado.setApellidos("Areas");
         usuarioActualizado.setDocumento("10055588");
-        usuarioActualizado.setDireccion("Buenos Aires");
-        usuarioActualizado.setFechaNacimiento(new Date(1999-02-15));
         usuarioActualizado.setCorreo("juan@gmail");
         usuarioActualizado.setPassword("Juan0717");
 
