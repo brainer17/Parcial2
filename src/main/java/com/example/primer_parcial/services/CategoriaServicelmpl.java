@@ -57,4 +57,38 @@ public class CategoriaServicelmpl implements CategoriaService {
         }
         return new ResponseEntity(categorias,HttpStatus.OK);
     }
+    @Override
+    public ResponseEntity<Categoria> editCategoria(Long id, Categoria categoria) {
+        Optional<Categoria> categoriaBD= categoriaRepository.findById(id);
+        if (categoriaBD.isPresent()) {
+            try {
+                categoriaBD.get().setNombre(categoria.getNombre());
+                categoriaBD.get().setDescripcion(categoria.getDescripcion());
+                categoriaRepository.save(categoriaBD.get());
+                return new ResponseEntity(categoriaBD, HttpStatus.OK);
+
+            } catch (Exception e) {
+                return ResponseEntity.badRequest().build();
+
+            }
+
+
+
+
+        }
+        return ResponseEntity.notFound().build();
+    }
+
+    @Override
+    public ResponseEntity<Categoria> deleteCategoriaById(Long id) {
+        Optional<Categoria> categoriaBD = categoriaRepository.findById(id);
+        if(categoriaBD.isPresent()){
+            categoriaRepository.delete(categoriaBD.get());
+            return  ResponseEntity.noContent().build();
+
+        }
+
+
+        return ResponseEntity.notFound().build();
+    }
 }

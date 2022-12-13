@@ -9,6 +9,12 @@ public interface CategoriaService {
 
     ResponseEntity<List<Categoria>> allCategorias();
 
+    ResponseEntity<Categoria> editCategoria(Long id, Categoria categoria);
+
+    ResponseEntity<Categoria> deleteCategoriaById(Long id);
+
+    //ResponseEntity<Categoria> editCategoria(Long id, Categoria categoria);
+
     ResponseEntity<Categoria> getCategoriaById(Long id);
 
     ResponseEntity<List<Categoria>> allCategoriasByName(String nombre);
