@@ -75,15 +75,12 @@ public class CategoriaServicelmpl implements CategoriaService {
 
 
     @Override
-    public ResponseEntity<Categoria> deleteCategoriaById(Long id) {
+    public ResponseEntity<Categoria> deleteCategoria(Long id) {
         Optional<Categoria> categoriaBD = categoriaRepository.findById(id);
-        if(categoriaBD.isPresent()){
+        if (categoriaBD.isPresent()){
             categoriaRepository.delete(categoriaBD.get());
-            return  ResponseEntity.noContent().build();
-
+            return ResponseEntity.noContent().build();
         }
-
-
         return ResponseEntity.notFound().build();
     }
 }

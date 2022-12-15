@@ -92,11 +92,11 @@ public class UsuarioServicioText {
 
 
         // when
-        when(usuarioRepository.findAllByNombre("kevin")).thenReturn(List.of(usuario));
+        when(usuarioRepository.findAllByNombre("brainer")).thenReturn(List.of(usuario));
         //when(usuarioRepository.findById(anyLong())).thenReturn(Optional.of(usuario));
 
 
-        ResponseEntity<List<Usuario>> usuarioRespuesta = usuarioServicelmpl.allUsersByName("kevin");
+        ResponseEntity<List<Usuario>> usuarioRespuesta = usuarioServicelmpl.allUsersByName("brainer");
         // ResponseEntity<List<Usuario>> usuarios = usuarioServicelmpl.allUsersByName(anyString());
 
         // then
@@ -141,11 +141,11 @@ public class UsuarioServicioText {
 
 
         // when
-        when(usuarioRepository.findAllByApellidos("rivera")).thenReturn(List.of((usuario)));
+        when(usuarioRepository.findAllByApellidos("gerena")).thenReturn(List.of((usuario)));
         //when(usuarioRepository.findAllByNombre("kevin")).thenReturn(List.of(usuario));
         //when(usuarioRepository.findById(anyLong())).thenReturn(Optional.of(usuario));
 
-        ResponseEntity<List<Usuario>> usuarioRespuesta = usuarioServicelmpl.allUsersByLastName("rivera");
+        ResponseEntity<List<Usuario>> usuarioRespuesta = usuarioServicelmpl.allUsersByLastName("gerena");
         //ResponseEntity<List<Usuario>> usuarioRespuesta = usuarioServicelmpl.allUsersByName("kevin");
         // ResponseEntity<List<Usuario>> usuarios = usuarioServicelmpl.allUsersByName(anyString());
 
@@ -192,11 +192,11 @@ public class UsuarioServicioText {
 
 
         // when
-        when(usuarioRepository.findAllByNombreAndApellidos("kevin","rivera")).thenReturn(List.of(usuario));
+        when(usuarioRepository.findAllByNombreAndApellidos("brainer","gerena")).thenReturn(List.of(usuario));
         //when(usuarioRepository.findAllByNombre("kevin")).thenReturn(List.of(usuario));
         //when(usuarioRepository.findById(anyLong())).thenReturn(Optional.of(usuario));
 
-        ResponseEntity<List<Usuario>> usuarioRespuesta = usuarioServicelmpl.allUsersByNameAndLastName("kevin","rivera");
+        ResponseEntity<List<Usuario>> usuarioRespuesta = usuarioServicelmpl.allUsersByNameAndLastName("brainer","gerena");
         //ResponseEntity<List<Usuario>> usuarioRespuesta = usuarioServicelmpl.allUsersByName("kevin");
         // ResponseEntity<List<Usuario>> usuarios = usuarioServicelmpl.allUsersByName(anyString());
 

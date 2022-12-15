@@ -11,7 +11,7 @@ public interface CategoriaService {
 
     ResponseEntity<Categoria> editCategoria(Long id,Categoria categoria);
 
-    ResponseEntity<Categoria> deleteCategoriaById(Long id);
+    ResponseEntity<Categoria> deleteCategoria(Long id);
 
 
 

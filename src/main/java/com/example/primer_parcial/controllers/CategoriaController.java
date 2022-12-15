@@ -81,6 +81,18 @@ public class CategoriaController {
 
     }
 
+    @DeleteMapping("categoria/{id}")
+    public ResponseEntity eliminarCategoria(@PathVariable Long id, @RequestHeader(value = "Authorization") String token){
+        try {
+            if (jwtUtil.getKey(token) == null) {
+                return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Token no valido");
+            }
+            return categoriaService.deleteCategoria(id);
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Token no valido."+e.getMessage());
+        }
+    }
+
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public Map<String, String> handleValidationExceptions(
