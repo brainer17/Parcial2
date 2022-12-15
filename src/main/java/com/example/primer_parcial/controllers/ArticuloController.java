@@ -64,15 +64,16 @@ public class ArticuloController {
 
     }
 
-    @PutMapping("/articulo/codigo/{codigo}")
-    public ResponseEntity modificarArticulo(@PathVariable String codigo, @RequestBody Articulo articulo,@RequestHeader(value = "Authorization") String token) {
+    @PutMapping("/articulo/{codigo}")
+    public ResponseEntity editarArticulo(@PathVariable String codigo, @RequestBody Articulo articulo , @RequestHeader(value = "Authorization") String token){
+
         try {
-            if(jwtUtil.getKey(token) == null) {
-                return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("token no valido");
+            if (jwtUtil.getKey(token) == null) {
+                return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Token no valido");
             }
-            return articuloService.editArticulo(codigo,articulo);
-        }catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("token no valido");
+            return articuloService.editArticle(codigo, articulo);
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Token no valido"+e.getMessage());
         }
 
     }

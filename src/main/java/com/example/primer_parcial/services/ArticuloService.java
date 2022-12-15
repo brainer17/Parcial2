@@ -10,7 +10,7 @@ public interface ArticuloService {
 
     ResponseEntity<Articulo> getArticuloByCodigo(String codigo);
 
-    ResponseEntity<Articulo> editArticulo(String codigo, Articulo articulo);
+    ResponseEntity<Articulo> editArticle(String codigo, Articulo articulo);
 
     ResponseEntity<Articulo> deleteArticuloByCodigo(String codigo);
 

@@ -279,7 +279,7 @@ public class UsuarioServicioText {
 
         usuarioActualizado.setId(1l);
         usuarioActualizado.setNombre("Juan");
-        usuarioActualizado.setApellidos("Areas");
+        usuarioActualizado.setApellidos("Arias");
         usuarioActualizado.setDocumento("10055588");
         usuarioActualizado.setCorreo("juan@gmail");
         usuarioActualizado.setPassword("Juan0717");

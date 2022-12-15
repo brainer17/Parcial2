@@ -37,33 +37,22 @@ public class ArticuloServicelmpl implements ArticuloService {
     }
 
     @Override
-    public ResponseEntity<Articulo> editArticulo(String codigo, Articulo articulo) {
-        Optional<Articulo> articuloBD= articuloRepository.findByCodigo(codigo);
+    public ResponseEntity<Articulo> editArticle(String codigo, Articulo articulo) {
+        Optional<Articulo> articuloBD = articuloRepository.findByCodigo(codigo);
         if (articuloBD.isPresent()) {
             try {
-                articuloBD.get().setCodigo(articulo.getCodigo());
                 articuloBD.get().setNombre(articulo.getNombre());
                 articuloBD.get().setDescripcion(articulo.getDescripcion());
-                articuloBD.get().setFecha_registro(articulo.getFecha_registro());
                 articuloBD.get().setStock(articulo.getStock());
-                articuloBD.get().setCategoria(articulo.getCategoria());
-                articuloBD.get().setUsuario(articulo.getUsuario());
                 articuloBD.get().setPrecio_venta(articulo.getPrecio_venta());
                 articuloBD.get().setPrecio_compra(articulo.getPrecio_compra());
-
                 articuloRepository.save(articuloBD.get());
-                return new ResponseEntity(articuloBD, HttpStatus.OK);
-
-            } catch (Exception e) {
+                return new ResponseEntity(articulo, HttpStatus.OK);
+            }catch (Exception e){
                 return ResponseEntity.badRequest().build();
-
             }
-
-
-
-
         }
-        return ResponseEntity.notFound().build();
+        return ResponseEntity.badRequest().build();
     }
 
     @Override
